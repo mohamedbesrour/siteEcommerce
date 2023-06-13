@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\stylePanier.css">
+    <title>Panier</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire de carte bancaire</title>
+
+</head>
+<body>
+<header>
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Molex
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="Index.html" target="_blank">Home</a>
+      <a href="products1.html" target="_blank">Products1</a>
+      <a href="Product2.html" target="_blank">Products2</a>
+      <a href="Contact.html" target="_blank">Contact</a>
+      <a href="Panier.html" target="_blank">Panier</a>
+    </div>
+  </div>
+</header>
+
+
+
+<main>
+  <section id="basket" class="panier--2">
+    <div id="blockTitrePanier" class="flex-start size60">
+        <h2 id="titre-panier">
+            Votre commande
+        </h2>
+    </div>
+    <div id="basket-fiche" class="flex-around">
+        <div id="injectJs">
+            <div id="basketProduit" class="flex-around">
+                <div id="blockImage">
+                    <img src="Image\Img_p2\DBZorange.png" width="50px"  alt="image-montre">
+                </div>
+                <div id="blockProduit" class="flex-column-around">
+                    <h2>GOKU X Swatch</h2>
+                    <p>prix</p>
+                    <p>135.00€</p>
+                    <p>REF : 0000000000</p>
+                    <p>En-stock</p>
+                </div>
+                <div id="block-change-produit" class="flex-around">
+                    <div class="flex-centre">
+                        <button class="bouton-moins">-</button>
+                        <span class="produit-quantite">1</span>
+                        <button class="bouton-plus">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+    
+    <form>
+      <h2>Formulaire de carte bancaire</h2>
+      <div class="type-carte">
+        <h3 id="h3-1">Mode de paiement accepté</h3>
+
+        <div class="carte-accepter">
+            <img src="Image\Img_panier\mastercard.png" alt="CB">
+            <img src="Image\Img_panier\visa.png" alt="CB">
+            <img src="Image\Img_panier\rupay.png" alt="CB">
+        </div>
+
+    </div>
+      <div class="form-group">
+        <label for="nom">Nom du titulaire de la carte :</label>
+        <input type="text" id="nom" placeholder="Écrivez votre nom ici.." name="nom" required>
+      </div>
+      <div class="form-group">
+        <label for="numero">Numéro de carte :</label>
+        <input type="text" id="numero" placeholder="xxxx xxxx xxxx xxxx" name="numero" required>
+      </div>
+      <div class="form-group">
+        <label for="expiration">Date d'expiration :</label>
+        <input type="date" id="expiration" name="expiration" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">Code de sécurité (CVV) :</label>
+        <input type="number" id="cvv" name="cvv" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="3,600$                           Checkout =>">
+      </div>
+    </form>
+  </div>
+</main>
+
+
+<div class="vide"></div></main>
+<footer>
+  <div class="footer">
+    <h3>Copyright</h3>
+  </div>
+</footer>
+</body>
+</html>

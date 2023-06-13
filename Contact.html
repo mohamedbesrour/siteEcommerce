@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleContact.css">
+    
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+
+        <img src="Image\Img_index\ROLEX.png" height="80px" alt="logo"> 
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="products1.html">Products1</a>
+            <a href="Product2.html">Products2</a>
+            <a href="GalerieDBZ.html">GalerieDBZ</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <a href="Panier.html">
+            <div class="btn-panier">
+            <span class="iconify" data-icon="raphael:cart"></span>
+            <h3>Buy now</h3>
+            </div>
+        </a>
+    </header>
+    <main>
+        <div class="titlecontact">
+
+        </div>
+        <h2>Votre boutique</h2>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21612.300273520774!2d6.127826599089859!3d46.21656204364654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c657fe2121485%3A0x9dc52c08fd309511!2sChem.%20Boissier%204D%2C%201223%20Cologny%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1686563536976!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""
+        width="450"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <br />    <div class="contact">
+      <h3>Contactez-nous :</h3>
+          <p>Téléphone:    +41-505952762<br>   <br>             
+          Email:        molex@gmail.com    <br> <br> 
+          Adresse:         4d Chemin Boissier, Geneva    </p>
+  </div><br />
+
+      <!-- Formumaire de reservation avec javascript -->
+<form class="form" onsubmit="return validerFormulaire()">
+    <h3>Écrivez-nous :</h3>
+
+      <label for="email">Adresse mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Adresse mail de contact.."
+      /><br /><br />
+      <label for="nom">Nom :</label>
+      <input
+        type="text"
+        id="nom"
+        name="nom"
+        placeholder="Écrivez votre nom ici.."
+      /><br /><br />
+
+      <div>
+        <label for="msg">Message :</label>
+        <textarea type="text" id="msg" rows="8" placeholder="Écrivez votre message ici.." name="user_message"></textarea>
+    </div>
+
+      <button type="submit">Réservez</button>
+</form>
+
+  <section class="section_DBZ">
+    <div>
+      <p>Le coffret Swatch X Dragon Ball Z Limited Edition est numéroté à 997 exemplaires dans le monde.
+      Il contient 7 montres collector (également numérotées) et 7 Dragon Balls – 7 est un chiffre porte-bonheur après tout !</p>
+    </div>
+  </section>
+
+    </main>
+
+    <footer>
+      <div class="footer">
+        <h3>Copyright</h3>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="JS/formulaire.js"></script>
+</body>
+</html>

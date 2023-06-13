@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #0B3E27;
+}
+
+header img {
+    width: 5%;
+    margin-left: 2rem;
+}
+
+nav {
+    margin: 1.5rem;
+}
+
+nav a {
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-panier {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: 1px solid black;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: #ADFF45;
+}
+
+.btn-panier .iconify {
+    padding-right: 0.5rem;
+}
+
+.btn-panier h3 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.ns {
+    margin-top: 9rem;
+}
+
+.ns h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.ns a {
+    text-decoration: none;
+    background-color: #ADFF45;
+    padding: 1rem;
+    border-radius: 25px;
+    color: white;
+    margin: 9rem;
+}
+
+.pro h2{
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: #d4d4d4;
+    margin-left: 40%;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.ggrid {
+    width: 31%;
+    margin: 1%;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.grid a {
+    display: flex;
+}
+
+
+.ggrid h3 {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.ggrid img {
+    width: 80%;
+    margin-left: 4rem;
+    height: 60%;
+}
+
+.descrip p {
+    margin-left: 2rem;
+    font-weight: 100;
+    font-family: cursive;
+}
+
+/* FOOTER */
+
+footer {
+    justify-content: center;
+    text-align: center;
+    height: 15rem;
+    background-color: #8B9781;
+    margin-top: 5rem;
+}
+
+footer h2 {
+    padding-top: 5rem;
+    font-weight: 100;
+}
+
+/* --------------__ ------------ RESPONSIVE ----------___--------- */
+
+@media screen and (max-width: 1175px) {
+    .ggrid {
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+        background-color: #d4d4d4;
+    }
+
+    .ggrid img {
+        width: 15%;
+        margin-left: 5rem;
+    }
+    
+
+    .grid a {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 929px) {
+    #montreban {
+        display: none;
+    }
+
+    .banniere {
+        background: url(/img/montreban.png);
+        width: 100%;
+        height: 55vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .ns h1 {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+    .pro h2 {
+        font-size: 1.3rem;
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .grid a {
+        display: flex;
+    }
+    
+}
