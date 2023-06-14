@@ -1,3 +1,9 @@
+var images = document.querySelector('.img-zoom');
+
+images.addEventListener('click', function() {
+	this.classList.toggle('zoom-in');
+});
+
 function validerFormulaire() {
     // Récupérer les valeurs saisies par l'utilisateur 
     // var element = document.getElementById(id);
@@ -7,13 +13,13 @@ function validerFormulaire() {
     var time = document.getElementById('time').value;
     
     // condition qui vérifie si tous les champs sont bien remplis
-    if (nom === '' || email === '' || msg === '') {
+    if (nom === '' || email === '' || date === '' || time === '') {
       alert("Veuillez remplir tous les champs");
       return false;
     }
     
     // Afficher les valeurs saisies
-    alert("//Réservation prit en compte//" + "\nNom: " + nom + "\nEmail: " + email + "\nMessage: " + msg);
+    alert("//Réservation prit en compte//" + "\nNom: " + nom + "\nEmail: " + email + "\nDate: " + date + "\nHeure: " + time);
     
     // Réinitialiser le formulaire
     document.getElementById("reservationForm").reset();
@@ -21,5 +27,3 @@ function validerFormulaire() {
     // Empêcher l'envoi du formulaire
     return false;
   }
-
-  

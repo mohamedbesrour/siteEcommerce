@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styleContact.css">
-    
+    <script type="text/javascript" src="JS\reservation.js"></script>
     <title>Contact</title>
 </head>
 <body>
     <header>
-
-        <img src="Image\Img_index\ROLEX.png" height="80px" alt="logo"> 
-        <nav>
-            <a href="Index.html">Home</a>
-            <a href="products1.html">Products1</a>
-            <a href="Product2.html">Products2</a>
-            <a href="GalerieDBZ.html">GalerieDBZ</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
-        <a href="Panier.html">
-            <div class="btn-panier">
-            <span class="iconify" data-icon="raphael:cart"></span>
-            <h3>Buy now</h3>
-            </div>
-        </a>
+      <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Molex
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="Index.html" target="_blank">Home</a>
+          <a href="products1.html" target="_blank">Products1</a>
+          <a href="Product2.html" target="_blank">Products2</a>
+          <a href="Contact.html" target="_blank">Contact</a>
+          <a href="Panier.html" target="_blank">Panier</a>
+        </div>
+      </div>
     </header>
     <main>
         <div class="titlecontact">
@@ -51,31 +59,33 @@
   </div><br />
 
       <!-- Formumaire de reservation avec javascript -->
-<form class="form" onsubmit="return validerFormulaire()">
-    <h3>Écrivez-nous :</h3>
-
-      <label for="email">Adresse mail:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Adresse mail de contact.."
-      /><br /><br />
-      <label for="nom">Nom :</label>
-      <input
-        type="text"
-        id="nom"
-        name="nom"
-        placeholder="Écrivez votre nom ici.."
-      /><br /><br />
-
-      <div>
-        <label for="msg">Message :</label>
-        <textarea type="text" id="msg" rows="8" placeholder="Écrivez votre message ici.." name="user_message"></textarea>
-    </div>
-
-      <button type="submit">Réservez</button>
-</form>
+      <h2>Réservez un rdv</h2>
+      <form class="form" onsubmit="return validerFormulaire()">
+        
+          <label for="nom">Nom :</label>
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            placeholder="Écrivez votre nom ici.."
+          /><br /><br />
+    
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Adresse mail de contact.."
+          /><br /><br />
+    
+          <label for="date">Date :</label>
+          <input type="date" id="date" name="date" /><br /><br />
+    
+          <label for="time">Heure :</label>
+          <input type="time" id="time" name="time" /><br /><br />
+    
+          <button type="submit">Réservez</button>
+    </form>
 
   <section class="section_DBZ">
     <div>
@@ -92,6 +102,6 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="JS/formulaire.js"></script>
+
 </body>
 </html>
